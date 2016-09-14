@@ -1,0 +1,168 @@
+.mobile{
+	display: none;
+}
+
+.point{
+	background-image: url(point.jpg);
+	color:#FFF;
+	cursor: pointer;
+	height: 500px;
+    background-position-x: -262px;
+    background-position-y: -94px;
+}
+
+.counter-point{
+	background-image: url(counterPoint.jpg);
+    color: #FFF;
+    cursor: pointer;
+    height: 500px;
+    background-size: 1200px 700px;
+    background-position-x: 740px;
+}
+
+.point-content{
+	position: absolute;
+    top: -500px;
+    padding: 15px;
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+.counter-point-content{
+    cursor: pointer;
+	position: absolute;
+    top: -500px;
+    padding: 15px;
+    background-color: #eaeaea;
+}
+
+.container-fluid{
+	width: 60%;
+}
+
+.point h1{
+		top: 0px;
+    	position: relative;
+    	background-color: rgba(0,0,0,0.8);
+    	padding-top: 10px;
+}
+.point h5{
+		top: -10px;
+    	position: relative;
+    	background-color: rgba(0,0,0,0.8);
+    	padding: 10px 0px;
+} 
+
+.counter-point h1{
+	top: 0px;
+	position: relative;
+	background-color: rgba(0,0,0,0.8);
+	padding-top: 10px;
+}
+
+.counter-point h5{
+	top: -10px;
+	position: relative;
+	background-color: rgba(0,0,0,0.8);
+	padding: 10px 0px;
+}
+@media only screen and (max-width: 920px){
+	.container-fluid{
+	width:100%;
+	}
+	.point{
+	  	height: 635px;
+	  	background-position: 440px -15px;
+	  	cursor: pointer;
+	  }
+
+	.point h1{
+		top: 90px;
+    	position: relative;
+    	background-color: rgba(0,0,0,0.8);
+    	padding-top: 10px;
+	} 
+	.point h5{
+		top: 80px;
+    	position: relative;
+    	background-color: rgba(0,0,0,0.8);
+    	padding: 10px 0px;
+	} 
+
+	.counter-point{
+		height: 635px;
+    	background-size: 1200px 700px;
+    	background-position: -600px 0px;
+		cursor: pointer;
+	}
+
+	.counter-point h1{
+		top: 90px;
+    	position: relative;
+    	background-color: rgba(0,0,0,0.8);
+    	padding-top: 10px;
+	}
+
+	.counter-point h5{
+		top: 80px;
+    	position: relative;
+    	background-color: rgba(0,0,0,0.8);
+    	padding: 10px 0px;
+	}
+
+	.point-content{
+		top: -640px;
+	}
+
+	.counter-point-content{
+		top: -640px;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+
+.header {
+  position: relative;
+  background: black;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+}
+.header img {
+  display: block;
+  margin: 0.2em auto;
+  width: 30%;
+}
+@media (max-width: 600px) {
+  .header img {
+    width: 60%;
+  }
+}
+
+.header a {
+  color: white;
+}
+.header .i {
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: calc(50% - 0.6em);
+  font-size: 1.4em;
+}
+.header .i i {
+  margin: 0 0.3em;
+}
+.header.inactive {
+  background: transparent;
+  position: absolute;
+}
+.header.inactive img {
+  margin: 0.2em 10%;
+}

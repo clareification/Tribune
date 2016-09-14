@@ -1,0 +1,392 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #e3e3e3;
+}
+
+/* line 12, ../sass/screen.scss */
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+/* line 20, ../sass/screen.scss */
+header ul > li {
+  display: inline;
+  float: left;
+  color: white;
+  margin: 14px 15px;
+  font-size: 12px;
+}
+
+/* line 29, ../sass/screen.scss */
+.container {
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 35, ../sass/screen.scss */
+.title {
+  width: 100%;
+  height: 98vh;
+  box-sizing: border-box;
+  background-image: url("../img/SSMU-3_LA.jpg");
+  background-size: cover;
+  color: white;
+  padding-top: 200px;
+}
+/* line 44, ../sass/screen.scss */
+.title h2 {
+  text-align: center;
+  margin: 0 auto 20px;
+  font-size: 2em;
+  font-family: 'Merriweather', cursive;
+}
+/* line 51, ../sass/screen.scss */
+.title h1 {
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 4em;
+  font-family: 'Merriweather', cursive;
+}
+/* line 58, ../sass/screen.scss */
+.title h4 {
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 1em;
+  font-family: 'Merriweather', cursive;
+}
+
+ul{
+  font-family: 'Merriweather', cursive;
+}
+
+/* line 66, ../sass/screen.scss */
+.content {
+  margin: 100px 0;
+}
+
+/* line 70, ../sass/screen.scss */
+.position {
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding-bottom: 40px;
+  margin: 100px 0;
+}
+/* line 75, ../sass/screen.scss */
+
+/* line 79, ../sass/screen.scss */
+.position:last-child {
+  margin: 200px 0 100px;
+}
+/* line 83, ../sass/screen.scss */
+.position h2 {
+  width: 100%;
+  font-size: 3em;
+  border-bottom: 2px solid black;
+  margin-bottom: 40px;
+  font-family: 'Merriweather', cursive;
+}
+/* line 92, ../sass/screen.scss */
+.position .candidate, .position .candidates {
+  border-top: 1px dashed grey;
+  padding-top: 20px;
+  position: relative;
+}
+/* line 97, ../sass/screen.scss */
+.position .candidate .candidate-header, .position .candidates .candidate-header {
+  margin-bottom: 40px;
+  height: 200px;
+}
+/* line 102, ../sass/screen.scss */
+.position .candidate .candidate-photo, .position .candidates .candidate-photo {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  float: left;
+  position: relative;
+  z-index: 1;
+  opacity: 0.6;
+  transition: all 0.4s linear;
+}
+/* line 112, ../sass/screen.scss */
+.position .candidate .candidate-photo .hl, .position .candidates .candidate-photo .hl {
+  opacity: 1;
+}
+/* line 116, ../sass/screen.scss */
+.position .candidate .candidate-photo:after, .position .candidates .candidate-photo:after {
+  content: '';
+  width: 210px;
+  height: 210px;
+  background-color: transparent;
+  border: 2px solid black;
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  z-index: 1;
+}
+/* line 129, ../sass/screen.scss */
+.position .candidate h3, .position .candidates h3 {
+  display: inline;
+  font-size: 3em;
+  margin: calc(100px - 0.5em) 0;
+  float: right;
+  transition: all 0.4s linear;
+  font-family: 'Merriweather', cursive;
+  font-weight: 300;
+}
+/* line 139, ../sass/screen.scss */
+.position .candidate:nth-child(odd) h3, .position .candidates:nth-child(odd) h3 {
+  float: left;
+}
+/* line 142, ../sass/screen.scss */
+.position .candidate:nth-child(odd) .candidate-photo, .position .candidates:nth-child(odd) .candidate-photo {
+  float: right;
+}
+@media (min-width: 770px) {
+  /* line 150, ../sass/screen.scss */
+  .position .candidates {
+    border-top: 1px dashed grey;
+    padding-top: 20px;
+    position: relative;
+  }
+  /* line 155, ../sass/screen.scss */
+  .position .candidates .details {
+    max-height: 0px;
+  }
+  /* line 159, ../sass/screen.scss */
+  .position .candidates .active {
+    transition-delay: 1s;
+    max-height: 100vh;
+  }
+  /* line 164, ../sass/screen.scss */
+  .position .candidates .candidate-header {
+    margin-bottom: 40px;
+    height: 200px;
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+  /* line 174, ../sass/screen.scss */
+  .position .candidates .candidate-header:hover .candidate-photo {
+    opacity: 1;
+  }
+  /* line 177, ../sass/screen.scss */
+  .position .candidates .candidate-header:hover h3 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /* line 182, ../sass/screen.scss */
+  .position .candidates .candidate-header h3 {
+    position: absolute;
+    font-size: 2em;
+    left: 207px;
+    padding-top: 20px;
+    margin: 0;
+    text-align: left;
+    width: 286px;
+    height: 43.4%;
+    display: inline;
+    top: -7px;
+    z-index: 4;
+    font-family: 'Merriweather', cursive;
+    font-weight: 300;
+  }
+  /* line 197, ../sass/screen.scss */
+  .position .candidates .candidate-header .hl {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /* line 201, ../sass/screen.scss */
+  .position .candidates .candidate-header:nth-child(2) {
+    position: absolute;
+    top: 39px;
+  }
+  /* line 204, ../sass/screen.scss */
+  .position .candidates .candidate-header:nth-child(2) .candidate-photo {
+    float: right;
+  }
+  /* line 208, ../sass/screen.scss */
+  .position .candidates .candidate-header:nth-child(2) h3 {
+    bottom: -7px;
+    vertical-align: baseline;
+    top: initial;
+    z-index: 3;
+    line-height: 134px;
+    text-align: right;
+  }
+}
+/* line 221, ../sass/screen.scss */
+.position .details {
+  clear: both;
+  overflow: hidden;
+  transition: 0.8s all linear;
+}
+/* line 229, ../sass/screen.scss */
+.position img {
+  width: 35%;
+}
+
+/* line 234, ../sass/screen.scss */
+p {
+  margin: 15px 0;
+  display: inline-block;
+  font-family: 'Merriweather', Garamond, Georgia, serif;
+}
+
+/* line 240, ../sass/screen.scss */
+.inactive {
+  max-height: 0px;
+}
+
+/* line 244, ../sass/screen.scss */
+.position .endorse {
+  border-top: 1px solid black;
+}
+/* line 246, ../sass/screen.scss */
+.position .endorse h3 {
+  float: left;
+  font-size: 2em;
+  margin: 10px 0 0px;
+}
+
+/* line 253, ../sass/screen.scss */
+.position .candidate .candidate-photo {
+  opacity: 1;
+}
+
+/* line 257, ../sass/screen.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 260, ../sass/screen.scss */
+a:hover {
+  color: red;
+}
+/* line 263, ../sass/screen.scss */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 266, ../sass/screen.scss */
+a:visited:hover {
+  color: red;
+}
+
+/* line 272, ../sass/screen.scss */
+.mobile {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  /* line 277, ../sass/screen.scss */
+  .mobile {
+    display: block;
+  }
+
+  .hd{
+    display: none;
+  }
+
+  /* line 280, ../sass/screen.scss */
+  .content {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+
+  /* line 284, ../sass/screen.scss */
+  .full {
+    display: none;
+  }
+
+  /* line 291, ../sass/screen.scss */
+  .position .candidate .candidate-photo {
+    margin: 0 auto;
+  }
+  /* line 295, ../sass/screen.scss */
+  .position .candidate .candidate-header {
+    margin: 0 calc(40vw - 100px);
+  }
+  /* line 298, ../sass/screen.scss */
+  .position .candidate h3 {
+    margin: 7px 0px;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+  }
+}

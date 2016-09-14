@@ -1,0 +1,246 @@
+html, body{
+	margin: 0;
+	max-width: 100%;
+    overflow-x: hidden;
+	font-family: 'PT Sans Narrow', serif;
+}
+
+.tribune-logo{
+	position: relative;
+    z-index: 2;
+    width: 300px;
+    top: 20px;
+    left: 50pc;
+}
+
+.image{
+	position: relative;
+    height: 83vh;
+    width: 100%;
+    margin-bottom: 40px;
+    cursor: auto;
+   	top: 274px;
+
+}
+
+.header-image{
+	margin-top: -324px;
+	width: 100%;
+}
+
+.filler{
+	position: relative;
+    height: 63px;
+    background-color: #e1f2ec;
+    top: -5px;
+}
+
+.story-meta{
+	position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 50px 0 70px 50px;
+	color: black;
+}
+
+.title{
+	font-size: 70px;
+	margin-bottom: 10px;
+}
+
+.subtitle{}
+
+.byline{}
+
+.header-image-sentance{
+	position: relative;
+    bottom: -65px;
+    padding-right: 15px;
+    color: #666;
+}
+
+.header-image-credit{
+	color: #999;
+}
+
+.content-wrapper{
+    padding-left: 22%;
+    padding-right: 33%;
+    position: relative;
+    top: 3px;
+    padding-top: 120px;
+}
+
+.content-paragraph{
+}
+	.class-1{
+	    top: -23px;
+	    width: 100%;
+	}
+	.class-2{
+		top: -23px;
+    	width: 100%;
+	}
+	.class-3{
+		top: -23px;
+		width: 100%;
+	}
+
+
+
+/*HALF SCREEN VIEW*/
+@media (max-width: 920px) {
+	.class-1{
+	 display: none;
+}
+.class-2{
+	 display: none;
+}
+.class-3{
+	 display: none;
+}
+
+	.image{
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    margin-bottom: 0;
+	    cursor: auto;
+	    top: 500px;
+	}
+	.filler{    
+		height: 950px;
+	    position: relative;
+	    top: -643px;
+	    z-index: -1;
+        background-color: #e1f2ec;
+
+	}
+
+	.header-image{
+		height: 458px;
+	    width: 967px;
+	    max-width: none;
+	    margin-left: -20.5px;
+	    top: 100px;
+	    position: static;
+	}
+
+	.tribune-logo{
+		position: absolute;
+	    z-index: 3;
+	    height: 4vh;
+	    text-align: inherit;
+	    left: 20pc;
+	    top: 16px;
+	}
+
+	.content-wrapper{
+		padding-left: 22%;
+	    padding-right: 33%;
+	    position: relative;
+	    padding-top: 985px;
+	}
+
+	.header-image-sentance{
+	    position: relative;
+    	bottom: 50px;
+    	float: right;
+	    padding-right: 15px;
+	    color: #666;
+	    position: absolute;
+	    /* float: right; */
+	    left: 650px;
+	    top: 933px;
+	}
+}
+
+
+/*TABLET VIEW*/
+@media (max-width: 768px) {
+	body {
+		max-width: 768px;
+	}
+	.class-1{
+	 top: -23px; left: -115px;
+	}
+	.class-2{
+		 top: -23px; left: -115px;
+	}
+	.class-3{
+		top: -23px; left: -115px; padding-left: 14%;
+	}
+	.image{
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    margin-bottom: 0;
+	    cursor: auto;
+	    top: 500px;
+	}
+	.filler{    
+		height: 950px;
+	    position: relative;
+	    top: -643px;
+	    z-index: -1;
+        background-color: #e1f2ec;
+
+	}
+
+	.header-image{
+    height: 30%;
+    width: 100%;
+    max-width: none;
+    margin-left: -7.5px;
+    top: -240px;
+    position: RELATIVE;
+	}
+
+	.tribune-logo{
+    position: absolute;
+    z-index: 3;
+    height: 4vh;
+    text-align: inherit;
+    left: 5pc;
+    top: 16px;
+    width: 190px;
+	}
+
+	.content-wrapper{
+		padding-left: 22%;
+	    padding-right: 5%;
+	    position: relative;
+	    padding-top: 865px;
+	}
+	.story-meta{
+		position: absolute;
+	    bottom: 0;
+	    box-sizing: border-box;
+	    width: 100%;
+	    margin-bottom: 0;
+	    padding: 50px 0 70px 50px;
+	    color: black;
+	    top: 210px;
+	}
+	.header-image-sentance{
+	    position: relative;
+	    bottom: 50px;
+	    float: right;
+	    padding-right: 15px;
+	    color: #666;
+	    position: absolute;
+	    /* float: right; */
+	    left: 103px;
+	    top: 823px;
+	    width: 350px;
+	}
+	.inline-image{
+		width: 240px;
+	}
+}
+
+a{
+	text-decoration: none;
+}
