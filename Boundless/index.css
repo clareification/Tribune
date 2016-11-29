@@ -9,7 +9,6 @@
   -moz-user-select: moz-none;
   -ms-user-select: none;
   user-select: none;
-  cursor: -webkit-grab;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -43,6 +42,10 @@ html {
     background: #FF0000;
 }
 
+a{
+  cursor: pointer;
+}
+
 .legend{
 
     background-color: white;
@@ -58,9 +61,7 @@ html {
     z-index: 3;
 }
 
-.legend:hover{
-  cursor: auto;
-}
+
 .col1{
   position: relative;
 }
@@ -95,9 +96,33 @@ html {
 .opinion{       border-color: #0a191f;}
 .studentliving{ border-color: #d1f0ee;}
 .news{          border-color: #42939f;}
-.sports{       border-color: #61bd95;}
+.sports{        border-color: #61bd95;}
 .scitech{       border-color: #ACDCB4;}
 .feature{       border-color: #4ba9b4;}
+
+.scitech_news{
+  border-top-color: #ACDCB4;
+  border-right-color: #ACDCB4;
+  border-bottom-color:#42939f;
+  border-left-color: #42939f;
+}
+
+.scitech_sports{
+  border-top-color: #ACDCB4;
+  border-right-color: #ACDCB4;
+  border-bottom-color:#61bd95;
+  border-left-color: #61bd95;
+}
+
+.ae_sports{
+  border-top-color: #90dad4;
+  border-right-color: #90dad4;
+  border-bottom-color:#61bd95;
+  border-left-color: #61bd95;
+}
+
+
+
 
 
 .article{
@@ -322,6 +347,130 @@ html {
   border-radius: 60px;
   border-width: 5px;
   border-style: solid;
+}
+
+.img-17{
+  background-image: url("17.jpg");
+  width: 120px;
+  height: 120px;
+  background-size: 180px;
+  background-position-x: 120px;
+  border-radius: 60px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+
+.img-18{
+  background-image: url("18.jpg");
+  width: 120px;
+  height: 120px;
+  background-size: 180px;
+  background-position-x: 10px;
+  border-radius: 60px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+#a1{
+  top: 740px;
+  left: 1470px;
+}
+
+#a2{
+    top: 20px;
+    left: 325px;
+}
+
+
+#a3{
+    top: 285px;
+    left: 170px;
+}
+
+
+
+#a4{
+    top: -90px;
+    left: 1110px;
+}
+
+
+#a5{
+    top: 10px;
+    left: 1480px;
+}
+
+
+#a6{
+    top: -90px;
+    left: 590px;
+}
+
+
+
+#a7{
+    top: 410px;
+    left: 10px;
+}
+
+
+#a8{
+    top: 10px;
+    left: 1610px;
+}
+
+
+#a9{
+    top: 730px;
+    left: 810px;
+}
+
+
+#a10{
+    top: 40px;
+    left: 170px;
+}
+
+
+#a11{
+    top: 410px;
+    left: 1600px;
+}
+
+#a12{
+    top: 110px;
+    left: 1320px;
+}
+
+#a13{
+    top: 180px;
+    left: 630px;
+}
+
+#a14{
+    top: 120px;
+    left: 940px;
+}
+
+#a15{
+  top:10px;
+  left: 10px;
+}
+
+#a16{
+  top: 750px;
+     left: 1640px;
+}
+
+#a17{
+    top: 10px;
+    left: 770px;
+}
+
+#a18{
+  top:10px;
+  left: 10px;
 }
 
 .title{ 
