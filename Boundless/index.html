@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
-<title>Daniel Lutes</title>
+<title>Boundless | McGill Tribune</title>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="app.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<meta charset="UTF-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="favicon.ico"/>
@@ -11,81 +38,158 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 <div ng-app="HelloUserApp">
     <div ng-controller="HelloUserController">
-
+<div data-ng-controller"HelloUserController" data-ng-init="init()"></div>
 <div class="section dark">
 <div class="boundless" id="boundless"><h1>Boundless</h1><h3>McGill Tribune Special Issue</h3> <i> Click and drag to move around</i></div>
 <a ng-click="gotoBottom()";> BOTT</a>
 	<div class="wrapper">
-		<div class="article move1" style="top:450px;">
-			<div class="image">
-				<img class="img-1">
+		<div class="article ae" id="ae" style="">
+			<div class="image ">
+				<img class="img-1 ae">
 			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> Trib Mix: Dad Rock </div>
 		</div>
 
-		<div class="article move2"  style="top:600px; right: 940px;">
+		<div class="article"  style="top:600px; right: 940px;">
 			<div class="image">
-				<img class="img-1">
+				<img class="img-2 news">
 			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> Open forum for the Provost’s Task Force on Indigenous Studies and Indigenous Education provokes dialogue on indigenous issues</div>
 		</div>
 
-		<div class="article move3"  style="top:350px; right: 940px;">
+		<div class="article"  style="top:350px; right: 940px;">
 			<div class="image">
-				<img class="img-1">
+				<img class="img-3 news">
 			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> Institute for the Study of International Development presents “Unpacking Participatory Democracy”</div>
 		</div>
 
-		<div class="article move4"  style="top:700px; ">
+		<div class="article"  style="top:700px; ">
 			<div class="image">
-				<img class="img-1">
+				<img class="img-4 scitech">
 			</div>
-			<div class="title"> Title of the Article</div>
-		</div>
-
-		<div class="article">
-			<div class="image">
-				<img class="img-1">
-			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> Médecins Sans Frontières: Transcending the bounds of international medical care</div>
 		</div>
 
 		<div class="article">
 			<div class="image">
-				<img class="img-1">
+				<img class="img-5 sports">
 			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> McGill Intramurals ensures only the average survive</div>
 		</div>
 
 		<div class="article">
 			<div class="image">
-				<img class="img-1">
+				<img class="img-6 scitech">
 			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> Blurring the lines of reality at the Montreal International Game Summit</div>
+		</div>
+
+		<div class="article">
+			<div class="image ">
+				<img class="img-7 news">
+			</div>
+			<div class="title"> McGill Senate releases report on systemic discrimination</div>
 		</div>
 
 		<div class="article">
 			<div class="image">
-				<img class="img-1">
+				<img class="img-8 sports">
 			</div>
-			<div class="title"> Title of the Article</div>
+			<div class="title"> Know Your Athlete: Francois Jarry</div>
 		</div>
+
+		<div class="article">
+			<div class="image">
+				<img class="img-9 sports">
+			</div>
+			<div class="title"> Bridging the gap between downtown and Mac campuses</div>
+		</div>
+
+		<div class="article">
+			<div class="image">
+				<img class="img-10 sports">
+			</div>
+			<div class="title"> Trump victory draws increased international interest in McGill</div>
+		</div>
+
+
+		<div class="article">
+			<div class="image">
+				<img class="img-11 sports">
+			</div>
+			<div class="title"> How hip hop changed basketball</div>
+		</div>
+
+
+		<div class="article">
+			<div class="image">
+				<img class="img-12 sports">
+			</div>
+			<div class="title"> The McGill Ice Hockey Research Group is changing hockey</div>
+		</div>
+
+
+		<div class="article">
+			<div class="image">
+				<img class="img-13 sports">
+			</div>
+			<div class="title"> Bilingual infants take a unique path to speech development</div>
+		</div>
+
+		<div class="article">
+			<div class="image">
+				<img class="img-14 sports">
+			</div>
+			<div class="title"> McGill students and faculty push for vaccine education</div>
+		</div>
+
+
+		<div class="article">
+			<div class="image">
+				<img class="img-15 sports">
+			</div>
+			<div class="title"> he rise of artificial intelligence: Google invests in deep learning in Montreal</div>
+		</div>
+
+		<div class="article">
+			<div class="image">
+				<img class="img-16 sports">
+			</div>
+			<div class="title"> Best films and TV shows 2016</div>
+		</div>
+
+
+		<div class="article">
+			<div class="image">
+				<img class="img-17 sports">
+			</div>
+			<div class="title"> Man vs. storm: In conversation with George Kourounis</div>
+		</div>
+
+		<div class="article">
+			<div class="image">
+				<img class="img-18 sports">
+			</div>
+			<div class="title"> The Tribune Explains: McGill’s rankings</div>
+		</div>
+
+
 	</div>
 </div>	
 </div>
 </div>
 <div class="legend">
 	<div class="col1">
-		<div class="color red"></div> <div class="el"> A&E </div>
-		<div class="color blue"></div> <div class="el"> Sports </div>
-		<div class="color orange"></div> <div class="el"> Sci Tech </div>
-		<div class="color green"></div> <div> Student Living </div>
+		<a href="#ae"> <div class="color red"></div><div class="el"> A&E </div></a> 
+		<a href="#sports"><div class="color blue"></div> <div class="el"> Sports </div></a>
+		<a href="#scitech"><div class="color orange"></div> <div class="el"> Sci Tech </div></a>
+		<a href="#studentliving"><div class="color green"></div> <div> Student Living </div>
 	</div>
 	<div class="col2">
-		<div class="color violet"></div> <div> Opinion </div>
-		<div class="color yellow"></div> <div> Feature </div>
-		<div class="color indigo"></div> <div> News </div>
+		<a href="#opinion"><div class="color violet"></div> <div> Opinion </div></a>
+		<a href="#feature"><div class="color yellow"></div> <div> Feature </div></a>
+		<a href="#news"> <div class="color indigo"></div> <div> News </div></a>
 	</div>
 
 </div>

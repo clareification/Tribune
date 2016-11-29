@@ -4,7 +4,16 @@ angular.module('HelloUserApp', [])
 }])
 .controller('HelloUserController', function($scope, $window, $location, $rootScope, $anchorScroll) {
 	
+// register controller in html
+// in controller
+$scope.init = function () {
+      $location.hash('boundless');
 
+      // call $anchorScroll()
+  	$anchorScroll.yOffset = 500;
+
+      $anchorScroll();
+};
 
 	$scope.gotoBottom = function() {
 		$anchorScroll.yOffset = 100;
