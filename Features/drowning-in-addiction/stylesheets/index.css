@@ -1,0 +1,631 @@
+@font-face {
+  font-family: Pier;
+  src: url(../fonts/pier-regular.otf);
+}
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/index.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/index.scss */
+body {
+  font-family: 'Gentium Book Basic', 'Georgia', sans-serif;
+  background: #f6f6f6;
+  padding-top: 4%;
+}
+@media (max-width: 600px) {
+  /* line 10, ../sass/index.scss */
+  body {
+    font-size: 0.8em;
+    padding-top: 9%;
+  }
+}
+
+/* line 20, ../sass/index.scss */
+.disclaimer, .aNote {
+  background: #121212;
+  color: #efefef;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+/* line 26, ../sass/index.scss */
+.aNote {
+  font-size: 1.6em;
+  width: 200px;
+  text-align: center;
+  margin: 0px auto 20px;
+}
+
+/* line 33, ../sass/index.scss */
+em {
+  font-weight: bold;
+}
+
+/* line 37, ../sass/index.scss */
+i {
+  font-style: italic;
+}
+
+/* line 41, ../sass/index.scss */
+.section {
+  padding: 20px 0px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+/* line 49, ../sass/index.scss */
+img {
+  display: block;
+  margin: 1em 0;
+  max-width: 100%;
+}
+
+/* line 55, ../sass/index.scss */
+.header {
+  position: fixed;
+  background: black;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+}
+/* line 61, ../sass/index.scss */
+.header img {
+  display: block;
+  margin: 0.2em auto;
+  width: 30%;
+}
+@media (max-width: 600px) {
+  /* line 61, ../sass/index.scss */
+  .header img {
+    width: 60%;
+  }
+}
+/* line 69, ../sass/index.scss */
+.header a {
+  color: white;
+}
+/* line 72, ../sass/index.scss */
+.header .i {
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: calc(50% - 0.6em);
+  font-size: 1.4em;
+}
+/* line 78, ../sass/index.scss */
+.header .i i {
+  margin: 0 0.3em;
+}
+
+/* line 84, ../sass/index.scss */
+.has-caption {
+  margin-bottom: 0;
+}
+
+/* line 88, ../sass/index.scss */
+.inline-caption {
+  color: black;
+  text-align: right;
+  font-size: 0.7em;
+  margin-bottom: 1em;
+}
+
+/* line 96, ../sass/index.scss */
+.caption {
+  position: absolute;
+  color: white;
+  bottom: 2px;
+  background: black;
+  right: 2px;
+  font-size: 0.7em;
+}
+/* line 104, ../sass/index.scss */
+.caption a {
+  color: #77E4FF;
+}
+
+/* line 110, ../sass/index.scss */
+#title {
+  position: absolute;
+  top: 30px;
+  right: 149px;
+}
+@media (max-width: 1000px) {
+  /* line 110, ../sass/index.scss */
+  #title {
+    top: 0px;
+    top: 10px;
+    right: 5px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 110, ../sass/index.scss */
+  #title {
+    top: 205px;
+    right: 5px;
+  }
+}
+
+/* line 128, ../sass/index.scss */
+.section-map {
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 600px) {
+  /* line 128, ../sass/index.scss */
+  .section-map {
+    background-attachment: initial;
+  }
+}
+/* line 140, ../sass/index.scss */
+.section-map.title-image {
+  background-image: url(http://www.mcgilltribune.com/wp-content/uploads/2016/03/flip-cup_noah_online-1.jpg);
+  padding-top: 25%;
+  background-size: cover;
+  background-position: top center;
+  font-family: 'Pier';
+}
+@media (min-width: 600px) {
+  /* line 140, ../sass/index.scss */
+  .section-map.title-image {
+    min-height: 98vh;
+  }
+}
+@media (max-width: 770px) {
+  /* line 140, ../sass/index.scss */
+  .section-map.title-image {
+    background-size: 136%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 140, ../sass/index.scss */
+  .section-map.title-image {
+    font-size: 0.5em;
+    width: 100%;
+    min-width: 100%;
+    text-align: center;
+    padding-top: 45%;
+    background-position: 100% 48%;
+    background-size: 166%;
+  }
+}
+/* line 161, ../sass/index.scss */
+.section-map.title-image h1 {
+  min-width: 400px;
+  width: 38%;
+  color: black;
+  margin: 0;
+  padding: 1em 0;
+}
+@media (max-width: 600px) {
+  /* line 161, ../sass/index.scss */
+  .section-map.title-image h1 {
+    min-width: 100%;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 161, ../sass/index.scss */
+  .section-map.title-image h1 {
+    font-size: 2em;
+  }
+}
+/* line 177, ../sass/index.scss */
+.section-map.title-image h3 {
+  min-width: 400px;
+  width: 40%;
+  color: black;
+  margin: 0 1em;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+@media (max-width: 600px) {
+  /* line 177, ../sass/index.scss */
+  .section-map.title-image h3 {
+    min-width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
+/* line 192, ../sass/index.scss */
+.section-map.image1 {
+  background-image: url(http://sus.mcgill.ca/wp-content/uploads/2012/03/IMG_6722.jpg);
+}
+/* line 195, ../sass/index.scss */
+.section-map.image2 {
+  background-image: url(http://www.mcgilltribune.com/wp-content/uploads/2016/02/photo1-1.jpg);
+}
+/* line 198, ../sass/index.scss */
+.section-map.image3 {
+  background-image: url(http://www.mcgilltribune.com/wp-content/uploads/2014/09/Gerts_LaurenBenson-Armer_online.jpg);
+}
+/* line 201, ../sass/index.scss */
+.section-map.image4 {
+  background-image: url("../media/4.jpg");
+}
+/* line 204, ../sass/index.scss */
+.section-map.image5 {
+  background-image: url("../media/photo_5.jpg");
+}
+/* line 207, ../sass/index.scss */
+.section-map.image6 {
+  background-image: url("../media/photo_6.jpg");
+}
+/* line 210, ../sass/index.scss */
+.section-map.image9 {
+  background-image: url("../media/photo_9.jpg");
+}
+
+/* line 218, ../sass/index.scss */
+.section-image {
+  background-size: 53%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center center;
+  padding-top: 45%;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 600px) {
+  /* line 218, ../sass/index.scss */
+  .section-image {
+    background-attachment: initial;
+  }
+}
+/* line 232, ../sass/index.scss */
+.section-image.title-image {
+  background-image: url(http://www.mcgilltribune.com/wp-content/uploads/2016/03/flip-cup_noah_online-1.jpg);
+  padding-top: 25%;
+  background-size: cover;
+  background-position: top center;
+  font-family: 'Pier';
+}
+@media (min-width: 600px) {
+  /* line 232, ../sass/index.scss */
+  .section-image.title-image {
+    min-height: 98vh;
+  }
+}
+@media (max-width: 770px) {
+  /* line 232, ../sass/index.scss */
+  .section-image.title-image {
+    background-size: 136%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 232, ../sass/index.scss */
+  .section-image.title-image {
+    font-size: 0.5em;
+    width: 100%;
+    min-width: 100%;
+    text-align: center;
+    padding-top: 45%;
+    background-position: 100% 48%;
+    background-size: 166%;
+  }
+}
+/* line 253, ../sass/index.scss */
+.section-image.title-image h1 {
+  min-width: 400px;
+  width: 30%;
+  color: black;
+  text-transform: uppercase;
+  margin: 0 1em;
+  padding: 0.3em 0;
+  font-size: 3em;
+}
+@media (max-width: 600px) {
+  /* line 253, ../sass/index.scss */
+  .section-image.title-image h1 {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 253, ../sass/index.scss */
+  .section-image.title-image h1 {
+    font-size: 2efm;
+  }
+}
+/* line 270, ../sass/index.scss */
+.section-image.title-image h3 {
+  min-width: 400px;
+  width: 57%;
+  color:black;
+  margin: 0 1.8em;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+@media (max-width: 600px) {
+  /* line 270, ../sass/index.scss */
+  .section-image.title-image h3 {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+/* line 286, ../sass/index.scss */
+.section-image.image1 {
+  background-image: url(http://sus.mcgill.ca/wp-content/uploads/2012/03/IMG_6722.jpg);
+}
+/* line 289, ../sass/index.scss */
+.section-image.image2 {
+  background-image: url(http://www.mcgilltribune.com/wp-content/uploads/2016/02/photo1-1.jpg);
+}
+/* line 292, ../sass/index.scss */
+.section-image.image3 {
+  background-image: url(http://www.mcgilltribune.com/wp-content/uploads/2014/09/Gerts_LaurenBenson-Armer_online.jpg);
+}
+/* line 295, ../sass/index.scss */
+.section-image.image4 {
+  background-image: url("../media/4.jpg");
+}
+/* line 298, ../sass/index.scss */
+.section-image.image5 {
+  background-image: url("../media/photo_5.jpg");
+}
+/* line 301, ../sass/index.scss */
+.section-image.image6 {
+  background-image: url("../media/photo_6.jpg");
+}
+/* line 304, ../sass/index.scss */
+.section-image.image9 {
+  background-image: url("../media/photo_9.jpg");
+}
+
+/* line 309, ../sass/index.scss */
+.overlay {
+  background: transparent;
+  position: relative;
+  width: 95%;
+  height: 800px;
+  /* your iframe height */
+  top: 800px;
+  /* your iframe height */
+  margin-top: -800px;
+  /* your iframe height */
+}
+
+/* line 319, ../sass/index.scss */
+p:first-child::first-letter {
+  float: left;
+  padding-right: 0.05em;
+  margin-bottom: 0;
+  line-height: 0;
+  padding-bottom: 0.28em;
+  font-family: 'PT Sans Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 6.9em;
+  padding-top: 0.25em;
+  font-weight: 900;
+  color: black;
+}
+
+/* line 333, ../sass/index.scss */
+.dropcap {
+  float: left;
+  padding-right: 0.05em;
+  margin-bottom: 0;
+  line-height: 0.4;
+  padding-bottom: 0.28em;
+  font-family: 'PT Sans Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 6.9em;
+  padding-top: 0.25em;
+  font-weight: 900;
+  color: black;
+}
+
+/* line 346, ../sass/index.scss */
+.innerContainer {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+/* line 352, ../sass/index.scss */
+.innerContainerp:first-child::first-letter {
+  float: left;
+  padding-right: 0.05em;
+  margin-bottom: 0;
+  line-height: 0.4;
+  padding-bottom: 0.28em;
+  font-family: 'PT Sans Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 6.9em;
+  padding-top: 0.15em;
+  font-weight: 900;
+  color: black;
+}
+/* line 365, ../sass/index.scss */
+.innerContainer h1 {
+  font-size: 3em;
+}
+/* line 368, ../sass/index.scss */
+.innerContainer p {
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 300;
+  white-space: normal;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+/* line 380, ../sass/index.scss */
+.imageGallery .galleryImg {
+  display: inline;
+  width: 33%;
+}
+/* line 383, ../sass/index.scss */
+.imageGallery .galleryImg:nth-child(4) {
+  display: block;
+}
+
+/* line 389, ../sass/index.scss */
+.timeline {
+  width: 80%;
+  margin: 215px auto 90px;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+@media (max-width: 620px) {
+  /* line 389, ../sass/index.scss */
+  .timeline {
+    display: none;
+  }
+}
+/* line 397, ../sass/index.scss */
+.timeline ul {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  left: 0.5%;
+}
+/* line 403, ../sass/index.scss */
+.timeline li {
+  float: left;
+  width: 12.4%;
+  position: relative;
+  height: 1em;
+  border-bottom: 1.5px solid #d80e00;
+}
+/* line 409, ../sass/index.scss */
+.timeline li span.after {
+  left: calc(50% - 12.5px);
+  position: absolute;
+  width: 0;
+  z-index: 3;
+  height: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0 12.5px 13px 12.5px;
+  border-color: transparent transparent #eee transparent;
+  content: '';
+}
+/* line 421, ../sass/index.scss */
+.timeline li span.before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 14.5px);
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0 14.5px 15px 14.5px;
+  border-color: transparent transparent #d80e00 transparent;
+}
+/* line 432, ../sass/index.scss */
+.timeline li div {
+  position: absolute;
+  bottom: 30px;
+  width: 190px;
+  background-color: #d80e00;
+  border-radius: 4px;
+  color: #eee;
+  padding: 9px;
+  display: none;
+  left: calc(50% - 90px);
+  text-align: center;
+}
+/* line 445, ../sass/index.scss */
+.timeline li:first-child div {
+  display: block;
+}
+/* line 448, ../sass/index.scss */
+.timeline li:first-child span.after {
+  display: none;
+}
+/* line 452, ../sass/index.scss */
+.timeline li h6 {
+  position: absolute;
+  top: 2em;
+  font-size: 0.8em;
+  text-align: center;
+  left: calc(50% - 12px);
+}
+
+
+.sub-heading{
+  padding-bottom: 40px;
+  padding-top: 60px;
+  align-content: center;
+}
+
+
+#title{
+  background-color: rgba(255,255,255,0.7);
+}

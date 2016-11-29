@@ -1,0 +1,422 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+}
+
+/* line 13, ../sass/screen.scss */
+.section1 .innerwrap:first-child {
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+/* line 19, ../sass/screen.scss */
+.section5 .innerwrap {
+  border-bottom: 2px solid black;
+  padding-bottom: 1px;
+  margin-bottom: 40px;
+}
+
+/* line 47, ../sass/index.scss */
+.header {
+  position: fixed;
+  background: black;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+}
+/* line 53, ../sass/index.scss */
+.header img {
+  display: block;
+  margin: 0.2em auto;
+  width: 30%;
+}
+@media (max-width: 600px) {
+  /* line 53, ../sass/index.scss */
+  .header img {
+    width: 60%;
+  }
+}
+/* line 61, ../sass/index.scss */
+.header a {
+  color: white;
+}
+/* line 64, ../sass/index.scss */
+.header .i {
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: calc(50% - 0.6em);
+  font-size: 1.4em;
+}
+/* line 70, ../sass/index.scss */
+.header .i i {
+  margin: 0 0.3em;
+}
+
+/* line 52, ../sass/screen.scss */
+.caption {
+  color: #eee;
+  background: #647AC8;
+  padding: 0.6em;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* line 59, ../sass/screen.scss */
+.narrow {
+  font-size: 0.6em;
+}
+
+/* line 62, ../sass/screen.scss */
+.intro {
+  background: url("../media/photo_1.jpg") top center no-repeat;
+  padding-top: 49%;
+  background-size: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+/* line 68, ../sass/screen.scss */
+.intro h1 {
+  position: absolute;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  line-height: 1.7;
+  color: #eee;
+  text-shadow: black 1px 0 10px;
+  font-size: 4em;
+  text-align: center;
+  width: 100%;
+  top: 20px;
+  left: auto;
+}
+
+
+.intro h2 {
+  position: absolute;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #eee;
+  text-shadow: black 1px 0 10px;
+  font-size: 2.5em;
+  text-align: left;
+  width: 100%;
+  bottom: 20px;
+  left: 10px;
+}
+@media (max-width: 700px) {
+  /* line 68, ../sass/screen.scss */
+  .intro h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 600px) {
+  /* line 68, ../sass/screen.scss */
+  .intro h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* line 89, ../sass/screen.scss */
+.descriptor {
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 620px) {
+  /* line 89, ../sass/screen.scss */
+  .descriptor {
+    display: none;
+  }
+}
+
+/* line 97, ../sass/screen.scss */
+.innerwrap {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+/* line 105, ../sass/screen.scss */
+.innerwrap p {
+  margin-bottom: 2em;
+  font-size: 18px;
+}
+
+/* line 110, ../sass/screen.scss */
+.timeline {
+  width: 80%;
+  margin: 215px auto 90px;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+@media (max-width: 620px) {
+  /* line 110, ../sass/screen.scss */
+  .timeline {
+    display: none;
+  }
+}
+/* line 118, ../sass/screen.scss */
+.timeline ul {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  left: 0.5%;
+}
+/* line 124, ../sass/screen.scss */
+.timeline li {
+  float: left;
+  width: 16.6%;
+  position: relative;
+  height: 1em;
+  border-bottom: 1.5px solid #d80e00;
+}
+/* line 130, ../sass/screen.scss */
+.timeline li span.after {
+  left: calc(50% - 12.5px);
+  position: absolute;
+  width: 0;
+  z-index: 3;
+  height: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0 12.5px 13px 12.5px;
+  border-color: transparent transparent #eee transparent;
+  content: '';
+}
+/* line 142, ../sass/screen.scss */
+.timeline li span.before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 14.5px);
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0 14.5px 15px 14.5px;
+  border-color: transparent transparent #d80e00 transparent;
+}
+/* line 153, ../sass/screen.scss */
+.timeline li div {
+  position: absolute;
+  bottom: 30px;
+  width: 120px;
+  background-color: #d80e00;
+  border-radius: 4px;
+  color: #eee;
+  padding: 9px;
+  display: none;
+  left: calc(50% - 64.5px);
+  text-align: center;
+}
+/* line 166, ../sass/screen.scss */
+.timeline li:first-child div {
+  display: block;
+}
+/* line 169, ../sass/screen.scss */
+.timeline li:first-child span.after {
+  display: none;
+}
+/* line 173, ../sass/screen.scss */
+.timeline li h6 {
+  position: absolute;
+  top: 2em;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 183, ../sass/screen.scss */
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* line 189, ../sass/screen.scss */
+.pic2 {
+  background: url("../media/photo_2.jpg") top center no-repeat;
+  padding-top: 63%;
+  background-size: contain;
+}
+
+/* line 194, ../sass/screen.scss */
+.pic3 {
+  background: url("../media/photo_3.jpg") 0 80% no-repeat;
+  padding-top: 66%;
+  background-size: cover;
+}
+
+.pic4 {
+  background: url("../media/photo_4.jpg") top center no-repeat;
+  padding-top: 66%;
+  background-size: contain;
+}
+
+.pic5 {
+  background: url("../media/photo_5.jpg") top center no-repeat;
+  padding-top: 66%;
+  background-size: contain;
+}
+
+@media (max-width: 600px) {
+  /* line 201, ../sass/screen.scss */
+  .highcharts-stack-labels {
+    display: none;
+  }
+}
+/* line 206, ../sass/screen.scss */
+text[y="52"] {
+  display: none;
+}
+
+/* line 210, ../sass/screen.scss */
+text[zIndex="8"] {
+  display: none;
+}
+
+/* line 214, ../sass/screen.scss */
+text[text-anchor="end"] {
+  display: none;
+}
+
+/* line 218, ../sass/screen.scss */
+text[y="72"] {
+  display: none;
+}
+
+/* line 222, ../sass/screen.scss */
+text[y="48"] {
+  display: none;
+}
+
+/* line 226, ../sass/screen.scss */
+text[x="53"] {
+  color: blue !important;
+}
+
+.story-meta{
+  position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 10px;
+    margin: 50px 0 70px 50px;
+    color: black;
+    font-family: 'Playfair Display';
+    padding-left: 20px;
+}
+
+.title{
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.subtitle{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+  img{
+        max-width: 100%;
+  }
+@media (max-width: 920px) {
+  .story-meta{
+    width: 43%;
+    bottom: 45%;
+  }
+  img{
+        max-width: 100%;
+  }
+}
+
+aside {
+  font-family: 'Playfair Display';
+  width: 50%;
+  font-size: 1.2em;
+  line-height: 1.4;
+  padding: 10px 0;
+  margin-bottom: 25px;
+}
+
+.center{
+  width: 100%
+}
+
+i{
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.head{
+  background-color: #78a8b8;
+}

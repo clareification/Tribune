@@ -216,10 +216,10 @@ html, body{
 	}
 
 	.content-wrapper{
-		padding-left: 22%;
-	    padding-right: 5%;
-	    position: relative;
-	    padding-top: 645px;
+    padding-left: 12%;
+    padding-right: 5%;
+    position: relative;
+    padding-top: 325px;
 	}
 	.story-meta{
 		position: absolute;
@@ -241,7 +241,7 @@ html, body{
     /* position: absolute; */
     /* float: right; */
     left: 7px;
-    top: 564px;
+    top: 580px;
     width: 280px;
     padding-top: 10px;
 	}
